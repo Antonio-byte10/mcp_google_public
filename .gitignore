@@ -1,0 +1,32 @@
+# Dependencies and build output (recreated by npm install / npm run build)
+node_modules/
+dist/
+
+# Local data: NEVER commit. Since 0.16.0 it lives in %LOCALAPPDATA%\mcp-google, outside this folder;
+# these rules are a safety net in case MCP_GOOGLE_DADOS/PERFIL/SAIDAS point here.
+# perfil*/ = logged-in Google session; saidas/ = generated files; config.json = local preferences
+perfil*/
+perfil*.lock
+*.lock
+saidas/
+config.json
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+*.tmp
+coverage/
+
+# OS and editors
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Local state of coding-agent tools
+.omc/
+.superpowers/
+.claude/

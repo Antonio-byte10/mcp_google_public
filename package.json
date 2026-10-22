@@ -1,0 +1,45 @@
+{
+    "name": "mcp_google_public",
+    "version": "0.16.1",
+    "private": true,
+    "description": "Local MCP server that lets Claude use NotebookLM and Google Flow (images and video) through your own browser session",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Antonio-byte10/mcp_google_public.git"
+    },
+    "homepage": "https://github.com/Antonio-byte10/mcp_google_public#readme",
+    "bugs": {
+        "url": "https://github.com/Antonio-byte10/mcp_google_public/issues"
+    },
+    "keywords": [
+        "mcp",
+        "model-context-protocol",
+        "claude",
+        "notebooklm",
+        "google-flow",
+        "veo",
+        "playwright",
+        "typescript"
+    ],
+    "type": "module",
+    "engines": {
+        "node": ">=22"
+    },
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "pretest": "tsc",
+        "test": "node --test \"test/*.test.mjs\""
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "1.32.1",
+        "playwright": "1.63.0",
+        "zod": "4.6.5"
+    },
+    "devDependencies": {
+        "@types/node": "26.6.4",
+        "typescript": "5.9.3"
+    }
+}
